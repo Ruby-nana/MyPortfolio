@@ -252,12 +252,28 @@ body {
 }
 
 /* ===== Works ===== */
-.works-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: var(--spacing-md);
-    max-width: 1000px;
-    margin: 0 auto;
+.works-swiper {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.works-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.works-swiper .swiper-button-prev,
+.works-swiper .swiper-button-next {
+    color: var(--accent-color);
+}
+
+.works-swiper .swiper-pagination-bullet {
+    background-color: var(--accent-color);
+}
+
+.works-swiper .swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
 }
 
 .work-card {
